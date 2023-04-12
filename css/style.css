@@ -1,0 +1,26 @@
+*{
+    background-color: blanchedalmond;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    text-decoration:underline
+}
+.formulario{
+    text-align: center;
+}
+#de{
+    background-color: aliceblue;
+    width: 200px;
+}
+#a{
+    background-color: aliceblue;
+    width: 200px;
+}
+h2{
+    font-size: 18px;
+}
+p{
+    font-size: 20px;
+}
