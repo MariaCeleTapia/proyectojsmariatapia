@@ -1,11 +1,11 @@
 function convertir() {
-    var valor=parseFloat(document.getElementById("cantidad").value);
+    let valor=parseFloat(document.getElementById("cantidad").value);
     document.getElementById("valor").innerHTML=valor
-    var de=document.getElementById("de").value;
-    var a=document.getElementById("a").value;
+    let de=document.getElementById("de").value;
+    let a=document.getElementById("a").value;
 
-    var dolar=213.77;
-    var euro=233.33;
+    let dolar=213.77;
+    let euro=233.33;
     resultado=0;
     //Peso a Dolar
     if(de==1&&a==2)
