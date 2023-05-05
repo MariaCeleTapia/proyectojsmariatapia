@@ -40,6 +40,14 @@ function convertir() {
     document.getElementById("resultado").innerHTML="resultado: $"+resultado.toFixed(2);
 }
 
+let elegir
+
+let nombre = prompt("Hola, ingresa nombre y apellido") ;
+prompt ("ingresa tu cuil")
+
+alert (" Hola "   +  nombre + " " +"bienvenido a Casa de cambio TUC") ;
+
+
 // mis Arrays
 
 let monedas = ["pesos" , "dolar" , "euro"];
@@ -53,7 +61,7 @@ for(let i = 0; i < monedas.length ; i++) {
     console.log(monedas[i]);
 }
 
-//Objetos
+//Objetos para usuarios frecuentes
 
 const usuario1 ={
     nombre:"maria",
@@ -61,3 +69,10 @@ const usuario1 ={
     Cuil:"27335687763"
 }
 console.log(usuario1);
+
+const usuario ={
+    nombre:"maria",
+    apellido: "jerez",
+    Cuil:"27385687763"
+}
+console.log(usuario2);
