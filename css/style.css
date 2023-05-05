@@ -24,3 +24,26 @@ h2{
 p{
     font-size: 20px;
 }
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: rgb(75, 54, 42);
+}
+
+
+.test{ 
+    background-color: blanchedalmond;
+
+}
+
+.compraVenta{
+    overflow: oculto;
+    position: relative;
+    width: auto;
+    margin: 1px;
+    min-height: auto;
+
+}

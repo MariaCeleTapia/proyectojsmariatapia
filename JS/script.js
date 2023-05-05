@@ -39,3 +39,25 @@ function convertir() {
     }
     document.getElementById("resultado").innerHTML="resultado: $"+resultado.toFixed(2);
 }
+
+// mis Arrays
+
+let monedas = ["pesos" , "dolar" , "euro"];
+console.log(monedas);
+
+// agregamos monedas con push
+
+monedas.push("pesos chilenos" , "pesos mexicanos" ,"usdt" ,"bitcoin")
+console.log(monedas.length);
+for(let i = 0; i < monedas.length ; i++) {
+    console.log(monedas[i]);
+}
+
+//Objetos
+
+const usuario1 ={
+    nombre:"maria",
+    apellido: "perez",
+    Cuil:"27335687763"
+}
+console.log(usuario1);
