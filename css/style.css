@@ -47,3 +47,7 @@ p{
     min-height: auto;
 
 }
+.form-input{
+    text-align: center;
+    background-color: aliceblue;
+}

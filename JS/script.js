@@ -40,12 +40,12 @@ function convertir() {
     document.getElementById("resultado").innerHTML="resultado: $"+resultado.toFixed(2);
 }
 
-let elegir
+//let elegir
 
-let nombre = prompt("Hola, ingresa nombre y apellido") ;
-prompt ("ingresa tu cuil")
+//let nombre = prompt("Hola, ingresa nombre y apellido") ;
+//prompt ("ingresa tu cuil")
 
-alert (" Hola "   +  nombre + " " +"bienvenido a Casa de cambio TUC") ;
+//alert (" Hola "   +  nombre + " " +"bienvenido a Casa de cambio TUC") ;
 
 
 // mis Arrays
@@ -70,9 +70,19 @@ const usuario1 ={
 }
 console.log(usuario1);
 
-const usuario ={
+const usuario2 ={
     nombre:"maria",
     apellido: "jerez",
     Cuil:"27385687763"
 }
 console.log(usuario2);
+
+/**Eventos**/
+const alertForm = document.querySelector("#alerta-form");
+const alertaInput = document.querySelector("#alerta-input");
+
+alertForm.addEventListener("submit" ,(e) => {
+    e.preventDefault();
+    alert(alertaInput.value);
+    alertForm.requestFullscreen();
+})

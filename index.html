@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <img width="500" height="200" src="./imag/imagen1.jpg" alt="">
     <h1>Conversor de Monedas</h1>
@@ -21,7 +23,7 @@
             <option value="2">Dolar</option>
             <option value="3">Euro</option>
         </select> <br><br>
-        Convertir A: 
+        Convertir A:
         <select id="a" onchange="convertir()">
             <option value="1">Pesos</option>
             <option value="2">Dolar</option>
@@ -29,46 +31,64 @@
         </select> <br><br>
         <p>Seleccione monto:</p>
         <input type="range" id="cantidad" min="0" max="10000" value="0" onchange="convertir()">
-        <span id="valor">0</span> 
-        
-        <h2 id="resultado">=$0.00</h2> 
+        <span id="valor">0</span>
+
+        <h2 id="resultado">=$0.00</h2>
     </form>
     <h1> Test del Inversor </h1>
-    <form class="formulario">
-        <h2> Te Haremos unas Preguntas </h2>
-        
-        ¿Cual es tu principal fuente de ingreso? <br> <br>
-        <select id="de"  onchange="elegir">
-        <option value="0">selecciona un opcion </option>
-        <option value="1"> Trabajo independiente (monotributista, autonomo)</option>
-        <option value="2"> En relacion de dependencia</option>
-        <option value="3"> Tengo jubilacion o pension</option>
-        <option value="4"> De forma independiente y tambien tengo jubilacion</option>
-        </select> <br><br>
+    <section id="contenido" class="contenidoform">
+        <div class="form-grup">
+            <ul class="name"> 
+            <h4>Ingresar Nombre y Apellido</h4>
+                <form action="" id="alerta-form" class="form"> 
+                <input type="text" id="alert-input" class="form-input">
+                <input type="submit" id="alert-submit" class="form-submit" value="Aceptar">
+                </form>
+            </ul>
+            <ul class="name"> 
+                <h4>Ingresar cuit</h4>
+                    <form action="" id="alerta-form" class="form"> 
+                    <input type="text" id="alert-input" class="form-input">
+                    </form>
+                </ul>
 
-        ¿Pagas impuesto en otros paises ademas de Argentina? <br><br>
-        <select id="de" onchange="elegir" >
-            <option value="0">Selecciona una opcion </option>
-            <option value="1"> No </option>
-            <option value="2"> Si</option>
-        </select> <br><br>
+        </div>
+        <form class="formulario">
+            <h2> Te Haremos unas Preguntas </h2>
 
-        ¿ Sos persona Expuesta juridicamente? <br><br>
-        <select id="de" onchange="elegir">
-            <option value="0"> Selecciona una opcion</option>
-            <option value="1"> No </option>
-            <option value="2"> Si</option>
-        </select> <br><br>
+            ¿Cual es tu principal fuente de ingreso? <br> <br>
+            <select id="de" onchange="elegir">
+                <option value="0">selecciona un opcion </option>
+                <option value="1"> Trabajo independiente (monotributista, autonomo)</option>
+                <option value="2"> En relacion de dependencia</option>
+                <option value="3"> Tengo jubilacion o pension</option>
+                <option value="4"> De forma independiente y tambien tengo jubilacion</option>
+            </select> <br><br>
 
-        ¿Tenes cuenta bancaria en dolares? <br><br>
-        <select id="de" onchange="elegir">
-            <option value="0"> Selecciona una opcion</option>
-            <option value="1"> No </option>
-            <option value="2"> Si</option>
-        </select><br><br>
-            
-        <button>Enviar</button>
+            ¿Pagas impuesto en otros paises ademas de Argentina? <br><br>
+            <select id="de" onchange="elegir">
+                <option value="0">Selecciona una opcion </option>
+                <option value="1"> No </option>
+                <option value="2"> Si</option>
+            </select> <br><br>
 
-    </form>
+            ¿ Sos persona Expuesta juridicamente? <br><br>
+            <select id="de" onchange="elegir">
+                <option value="0"> Selecciona una opcion</option>
+                <option value="1"> No </option>
+                <option value="2"> Si</option>
+            </select> <br><br>
+
+            ¿Tenes cuenta bancaria en dolares? <br><br>
+            <select id="de" onchange="elegir">
+                <option value="0"> Selecciona una opcion</option>
+                <option value="1"> No </option>
+                <option value="2"> Si</option>
+            </select><br><br>
+
+            <button>Enviar</button>
+
+        </form>
 </body>
+
 </html>
