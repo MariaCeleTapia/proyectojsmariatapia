@@ -49,5 +49,10 @@ p{
 }
 .form{
     text-align: center;
+background-color: aliceblue;
+}
 
+#alertaForm{
+    width: 200px;
+    background-color: aliceblue;
 }

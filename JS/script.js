@@ -43,6 +43,7 @@ function convertir() {
 //alert (" Hola "   +  nombre + " " +"bienvenido a Casa de cambio TUC") ;
 
 
+
 // mis Arrays
 
 let monedas = ["pesos", "dolar", "euro"];
@@ -74,6 +75,11 @@ consol.log(usuario2);
 
 
 
+const form =document.querySelectorAll(".form");
+
+
+
+
 /**Eventos**/
 const alertForm = document.querySelector("#alerta-form");
 const alertaInput = document.querySelector("#alerta-input");
@@ -84,14 +90,10 @@ alertForm.addEventListener("submit", (e) => {
     alertForm.reset();
 })
 
-/**localStorage **/
-
-let usuarioEnLocalStorge = localStorage.getItem("usuario");
-console.log(usuarioEnLocalStorge);
-
-let usuarioIngresado = prompt("ingrese su nombre");
-localStorage.setItem("usuario-ingresado" , usuarioIngresado);
-let usuarioIngresadoEnLocalStorge =localStorage.getItem("usuario-ingresado");
-console.log(usuarioIngresadoEnLocalStorge);
+/**localStorage - json **/
+const usuario1JSON = JSON.stringify(usuario1);
+localStorage.setItem("usuario1", usuario1JSON);
+const usuario2JSON = JSON.stringify(usuario2);
+localStorage.setItem("usuario2", usuario2JSON);
 
 
